@@ -30,7 +30,6 @@ const Nav = () => {
             <Menu />
             <SearchBox />
             <QuickAccess />
-            This is a react part. 
         </div>
     );
 }
