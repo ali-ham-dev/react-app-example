@@ -1,4 +1,7 @@
 .search-box {
   background-color: gray;
   border-radius: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }/*# sourceMappingURL=SearchBox.css.map */
