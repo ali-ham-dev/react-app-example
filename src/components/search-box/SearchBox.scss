@@ -1,5 +1,12 @@
+$search-box-background-color: gray;
+
+@mixin no-background-no-border {
+    background: rgba(255, 255, 255, 0);
+    border: 0px;
+}
+
 .search-box {
-    background-color: gray;
+    background-color: $search-box-background-color;
     border-radius: 2rem;
     display: flex;
     flex-direction: row;
@@ -10,10 +17,44 @@
     }
 
     &__search-button {
-
+        @include no-background-no-border();
     }
 
     &__search-button-icon {
+
+    }
+
+    &__input-media {
+        flex-grow: 1;
+        background-color: $search-box-background-color;
+    }
+
+    &__audio-visual-controls {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__record-audio-container {
+
+    }
+
+    &__record-audio-button {
+        @include no-background-no-border();
+    }
+
+    &__record-audio-icon {
+
+    }
+
+    &__record-visual-container {
+
+    }
+
+    &__record-visual-button {
+        @include no-background-no-border();
+    }
+
+    &__record-visual-button-icon {
 
     }
 }
