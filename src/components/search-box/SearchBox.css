@@ -1,5 +1,5 @@
 .search-box {
-  background-color: gray;
+  background-color: rgb(157, 157, 157);
   border-radius: 1rem;
   display: flex;
   flex-direction: row;
@@ -8,7 +8,7 @@
 }
 .search-box__input-media {
   flex-grow: 1;
-  background-color: gray;
+  background-color: rgb(157, 157, 157);
 }
 .search-box__audio-visual-controls {
   display: flex;

@@ -2,7 +2,7 @@ import "./SearchBoxButton.css";
 
 function SearchBoxButton(props) {
     return (
-        <div className="button__container">
+        <div className="button">
             <button className="button__button">
                 <div className="button__icon-container">
                     { props.icon }
