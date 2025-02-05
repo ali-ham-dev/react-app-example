@@ -2,36 +2,18 @@ import "./SearchBox.css";
 import MagnifyingGlass from "../magnifying-glass/MagnifyingGlass";
 import Microphone from "../microphone/Microphone";
 import Camera from "../camera/Camera";
+import SearchBoxButton from "../search-box-buttons/SearchBoxButton";
 
 function SearchBox() {
+    const iconWidth = '30';
+    const iconHeight = '30';
+
     return (
         <div className="search-box">
-            <div className="search-box__search-button-container">
-                <button className="search-box__search-button">
-                    <div className="search-box__search-button-icon">
-                        <MagnifyingGlass />  
-                    </div>
-                </button>
-            </div>
+            <SearchBoxButton icon={ <MagnifyingGlass width={ iconWidth } height={ iconHeight } /> } />
             <input placeholder='Search' class="search-box__input-media"></input>
-            <div className="search-box__audio-visual-controls">
-                <div className="search-box__record-audio-container">
-                    <button className="search-box__record-audio-button"
-                            title="Search with audio">
-                        <div className="search-box__record-audio-button-icon">
-                            <Microphone />  
-                        </div>
-                    </button>
-                </div>
-                <div className="search-box__record-visual-container">
-                    <button className="search-box__record-visual-button"
-                            title="Search with visual">
-                        <div className="search-box__record-visual-button-icon">
-                            <Camera />  
-                        </div>
-                    </button>
-                </div>
-            </div>
+            <SearchBoxButton icon={ <Microphone width={ iconWidth } height={ iconHeight } /> } />
+            <SearchBoxButton icon={ <Camera width={ iconWidth } height={ iconHeight } /> } />
         </div>
     )
 }

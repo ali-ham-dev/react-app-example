@@ -7,22 +7,11 @@ $search-box-background-color: gray;
 
 .search-box {
     background-color: $search-box-background-color;
-    border-radius: 2rem;
+    border-radius: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
-    &__search-button-container {
-
-    }
-
-    &__search-button {
-        @include no-background-no-border();
-    }
-
-    &__search-button-icon {
-
-    }
+    height: 2.5rem;
 
     &__input-media {
         flex-grow: 1;
@@ -32,29 +21,5 @@ $search-box-background-color: gray;
     &__audio-visual-controls {
         display: flex;
         flex-direction: row;
-    }
-
-    &__record-audio-container {
-
-    }
-
-    &__record-audio-button {
-        @include no-background-no-border();
-    }
-
-    &__record-audio-icon {
-
-    }
-
-    &__record-visual-container {
-
-    }
-
-    &__record-visual-button {
-        @include no-background-no-border();
-    }
-
-    &__record-visual-button-icon {
-
     }
 }

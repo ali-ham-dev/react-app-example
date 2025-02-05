@@ -1,13 +1,10 @@
 .search-box {
   background-color: gray;
-  border-radius: 2rem;
+  border-radius: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-.search-box__search-button {
-  background: rgba(255, 255, 255, 0);
-  border: 0px;
+  height: 2.5rem;
 }
 .search-box__input-media {
   flex-grow: 1;
@@ -16,12 +13,4 @@
 .search-box__audio-visual-controls {
   display: flex;
   flex-direction: row;
-}
-.search-box__record-audio-button {
-  background: rgba(255, 255, 255, 0);
-  border: 0px;
-}
-.search-box__record-visual-button {
-  background: rgba(255, 255, 255, 0);
-  border: 0px;
 }/*# sourceMappingURL=SearchBox.css.map */
